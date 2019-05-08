@@ -1,0 +1,17 @@
+DECLARE ro BIT[4]
+
+H 0
+H 1
+I 4
+X 3
+X 3
+Z 2
+
+CNOT 0 1
+CCNOT 0 1 2
+CPHASE(1.0) 0 1
+
+# hello world
+RESET 1
+MEASURE 0 ro[0]
+MEASURE 1 ro[1]
